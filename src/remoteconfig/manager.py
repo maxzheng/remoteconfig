@@ -10,7 +10,7 @@ class RemoteConfig(DotNotationConfig):
       Reads and parses the config source
 
       :param file/str source: Config source URL (http/https), or string, file name, or file pointer.
-      :param int cache_duration: For URL source only. Optionally cache the URL content for the given duration to
+      :param int cache_duration: For URL source only. Optionally cache the URL content for the given duration (seconds) to
                                  avoid downloading too often.
     """
     if source.startswith('http://') or source.startswith('https://'):

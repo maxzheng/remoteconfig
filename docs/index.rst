@@ -11,6 +11,11 @@ Welcome to remoteconfig's documentation!
 
    README
 
+.. toctree::
+   :hidden:
+
+   Change Log <CHANGELOG>
+
 API Documentation
 =================
 

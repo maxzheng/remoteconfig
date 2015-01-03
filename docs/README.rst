@@ -30,12 +30,13 @@ For everything else that you can do with `config`, refer to `localconfig's docum
 More
 ====
 
-Documentation: http://remoteconfig.readthedocs.org/
-
-Github project: https://github.com/maxzheng/remoteconfig
-
-Report issues/bugs: https://github.com/maxzheng/remoteconfig/issues
-
-LinkedIn: https://www.linkedin.com/in/maxzheng
-
-Email: maxzheng.os @t gmail.com
+| Documentation: http://remoteconfig.readthedocs.org
+| Changes: http://localconfig.readthedocs.org/en/latest/CHANGELOG.html
+|
+| PyPI Package: https://pypi.python.org/pypi/remoteconfig
+| GitHub Source: https://github.com/maxzheng/remoteconfig
+|
+| Report Issues/Bugs: https://github.com/maxzheng/remoteconfig/issues
+|
+| Connect: https://www.linkedin.com/in/maxzheng
+| Contact: maxzheng.os @t gmail.com
