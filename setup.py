@@ -15,7 +15,6 @@ setuptools.setup(
 
   install_requires=[
     'localconfig',
-    'markupsafe',  # readthedocs.org requires this to build doc
     'requests',
   ],
 
