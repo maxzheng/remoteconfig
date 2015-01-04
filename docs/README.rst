@@ -31,11 +31,9 @@ More
 ====
 
 | Documentation: http://remoteconfig.readthedocs.org
-| Changes: http://remoteconfig.readthedocs.org/en/latest/CHANGELOG.html
 |
 | PyPI Package: https://pypi.python.org/pypi/remoteconfig
 | GitHub Source: https://github.com/maxzheng/remoteconfig
-|
 | Report Issues/Bugs: https://github.com/maxzheng/remoteconfig/issues
 |
 | Connect: https://www.linkedin.com/in/maxzheng

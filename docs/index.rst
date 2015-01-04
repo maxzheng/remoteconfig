@@ -20,6 +20,14 @@ API Documentation
    manager
    utils
 
+Change Log
+=================
+
+.. toctree::
+   :maxdepth: 1
+
+   CHANGELOG
+
 Indices and tables
 ==================
 
