@@ -11,11 +11,11 @@ def _url_content_cache_file(url):
 
 def url_content(url, cache_duration=None, from_cache_on_error=False):
   """
-  Get content for the given URL
+    Get content for the given URL
 
-  :param str url: The URL to get content from
-  :param int cache_duration: Optionally cache the content for the given duration to avoid downloading too often.
-  :param bool from_cache_on_error: Return cached content on any HTTP request error if available.
+    :param str url: The URL to get content from
+    :param int cache_duration: Optionally cache the content for the given duration to avoid downloading too often.
+    :param bool from_cache_on_error: Return cached content on any HTTP request error if available.
   """
   cache_file = _url_content_cache_file(url)
 
