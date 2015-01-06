@@ -6,7 +6,7 @@ import setuptools
 
 setuptools.setup(
   name='remoteconfig',
-  version='0.2.0',
+  version='0.2.1',
 
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',

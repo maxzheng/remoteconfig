@@ -1,5 +1,17 @@
-Version 0.2.0
+Version 0.2.1
 ================================================================================
+
+* Require localconfig>=0.4
+
+* Require localconfig>0.4
+
+* Fix API doc
+
+* Update changelog
+
+
+Version 0.2.0
+--------------------------------------------------------------------------------
 
 * Restore cache_duration for read()
 
