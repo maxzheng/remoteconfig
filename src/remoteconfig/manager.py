@@ -19,6 +19,23 @@ class RemoteConfig(LocalConfig):
 
     super(RemoteConfig, self).__init__(last_source, **localconfig_kwargs)
 
+  def read(self, sources, cache_duration=None):
+    """
+    Queues the config sources to be read later (when config is accessed), or reads immediately if config has already been
+    accessed.
+
+    :param file/str/list sources: Config source URL (http/https), source string, file name, or file pointer, or list
+                                  of the other sources.  If file source does not exist, it is ignored.
+    :param int cache_duration: Default cache durationg for for URL source only. Optionally cache the URL content
+                               for the given duration (seconds) to avoid downloading too often.
+                               This sets the default for all reads now and subsequent reads.
+    :return: True if all sources were successfully read or will be read, otherwise False
+    """
+    if cache_duration is not None:
+      self._cache_duration = cache_duration
+
+    return super(RemoteConfig, self).read(sources)
+
   def _read(self, source):
     """
     Reads and parses the config source

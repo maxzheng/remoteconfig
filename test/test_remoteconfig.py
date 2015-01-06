@@ -15,17 +15,22 @@ class TestRemoteConfig(object):
     config.read(config_url)
     assert config_content == str(config)
 
-    # Using cache duration
+    # Cache duration on read
     updated_config_content = '[section]\n\nkey = updated\n'
     httpretty.register_uri(httpretty.GET, config_url, body=updated_config_content)
+    config.read(config_url, cache_duration=1)
+    assert config_content == str(config)
+
+    # Cache duration on init
     config2 = RemoteConfig(config_url, cache_duration=1, kv_sep=': ')
     assert config_content.replace(' = ', ': ') == str(config2)
 
-    # Still under cache duration
+    # Using default cache duration
     config2.read(config_url)
     assert config_content.replace(' = ', ': ') == str(config2)
 
     time.sleep(1)
+
     # Should update after cache duration
     config.read(config_url)
     assert updated_config_content == str(config)
