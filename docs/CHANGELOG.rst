@@ -1,5 +1,13 @@
-Version 0.1.4
+Version 0.1.5
 ================================================================================
+
+* Restore cache_duration for read()
+
+* Updated to use latest localconfig: Refactor to use LocaConfig and change where cache_duration can be set
+
+
+Version 0.1.4
+--------------------------------------------------------------------------------
 
 * Allow cache duration to be set in init
 
