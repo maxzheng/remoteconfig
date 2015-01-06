@@ -14,7 +14,7 @@ setuptools.setup(
   description=open('README.rst').read(),
 
   install_requires=[
-    'localconfig',
+    'localconfig>0.4',
     'requests',
   ],
 
