@@ -32,12 +32,12 @@ def url_content(url, cache_duration=None, from_cache_on_error=False):
     response.raise_for_status()
     content = response.text
 
-  except Exception:
+  except Exception as e:
     if from_cache_on_error and os.path.exists(cache_file):
       with open(cache_file) as fp:
         return fp.read()
     else:
-      raise
+      raise e.__class__("An error occurred when getting content for %s: %s" % (url, e))
 
   if cache_duration or from_cache_on_error:
     with open(cache_file, 'w') as fp:
