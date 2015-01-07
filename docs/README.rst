@@ -14,7 +14,7 @@ To read from a remote config:
 
 .. code-block:: python
 
-    from remoteconfig import config, RemoteConfig
+    from remoteconfig import config
 
     config.read('http://url/to/remote-config.ini')
 
@@ -22,6 +22,7 @@ To read from a remote config:
     # config.read('http://url/to/remote-config.ini', cache_duration=60)
     #
     # Or instantiate another config instance:
+    # from remoteconfig import RemoteConfig
     # config2 = RemoteConfig('http://url/to/another-config.ini', cache_duration=10)
 
 For everything else that you can do with `config`, refer to `localconfig's documentation`_
