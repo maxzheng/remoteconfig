@@ -14,12 +14,15 @@ To read from a remote config:
 
 .. code-block:: python
 
-    from remoteconfig import config
+    from remoteconfig import config, RemoteConfig
 
     config.read('http://url/to/remote-config.ini')
 
     # Or cache the URL content for 60 seconds to avoid excessive download if program is invoked often
-    config.read('http://url/to/remote-config.ini', cache_duration=60)
+    # config.read('http://url/to/remote-config.ini', cache_duration=60)
+    #
+    # Or instantiate another config instance:
+    # config2 = RemoteConfig('http://url/to/another-config.ini', cache_duration=10)
 
 For everything else that you can do with `config`, refer to `localconfig's documentation`_
 
