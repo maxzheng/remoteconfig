@@ -1,5 +1,13 @@
-Version 0.2.1
+Version 0.2.2
 ================================================================================
+
+* Add an example to instantiate another config
+
+* Raise a more descriptive error when requests.get fails
+
+
+Version 0.2.1
+--------------------------------------------------------------------------------
 
 * Require localconfig>=0.4
 
