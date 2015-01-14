@@ -28,7 +28,7 @@ def url_content(url, cache_duration=None, from_cache_on_error=False):
           return fp.read()
 
   try:
-    response = requests.get(url)
+    response = requests.get(url, timeout=5)
     response.raise_for_status()
     content = response.text
 
