@@ -22,7 +22,7 @@ def test_url_content():
 
     # This should return cached content
     assert str(url_content('url1', cache_duration=1)) == cached_text
-    requests_get.assert_called_once_with('url1')
+    requests_get.assert_called_once_with('url1', timeout=5)
 
     assert str(url_content('url2', cache_duration=1)) == mock_response.text
 
