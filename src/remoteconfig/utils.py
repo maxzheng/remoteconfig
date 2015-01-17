@@ -1,12 +1,12 @@
-import base64
 import os
+import re
 import requests
 import tempfile
 import time
 
 
 def _url_content_cache_file(url):
-  return os.path.join(tempfile.gettempdir(), 'url-content-cache-%s' % base64.urlsafe_b64encode(url))
+  return os.path.join(tempfile.gettempdir(), 'url-content-cache-%s' % re.sub('[^\w\.:\-=?+]', '_', url[-200:]))
 
 
 def url_content(url, cache_duration=None, from_cache_on_error=False):

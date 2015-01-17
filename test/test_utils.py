@@ -31,8 +31,9 @@ def test_url_content():
     assert str(url_content('url1', cache_duration=1)) == mock_response.text
     assert requests_get.call_count == 3
 
-    # No content,it should raise
     cache_file = _url_content_cache_file('url3')
+
+    # Ensure cache file isn't there from previous run
     if os.path.exists(cache_file):
       os.unlink(cache_file)
 
@@ -45,3 +46,9 @@ def test_url_content():
 
     requests_get.side_effect = Exception
     assert str(url_content('url3', from_cache_on_error=True)) == mock_response.text
+
+
+def test_url_content_cache_file():
+  cache_file = _url_content_cache_file('https://raw.githubusercontent.com/maxzheng/remoteconfig/master/config-2.CFG?s=1')
+  expected_name = '/url-content-cache-https:__raw.githubusercontent.com_maxzheng_remoteconfig_master_config-2.CFG?s=1'
+  assert expected_name == cache_file[-len(expected_name):]
