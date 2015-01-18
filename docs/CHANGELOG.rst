@@ -1,5 +1,15 @@
-Version 0.2.2
+Version 0.2.4
 ================================================================================
+
+* Add py26 testing to tox
+
+* Use mangled url as file name instead of base64 encode
+
+* Fix tests
+
+
+Version 0.2.2
+--------------------------------------------------------------------------------
 
 * Add an example to instantiate another config
 
