@@ -11,7 +11,10 @@ setuptools.setup(
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',
 
-  description=open('README.rst').read(),
+  description='A simple wrapper for localconfig that allows for reading config from a remote server',
+  long_description=open('README.rst').read(),
+
+  url='https://github.com/maxzheng/remoteconfig',
 
   install_requires=[
     'localconfig>=0.4',
@@ -30,7 +33,7 @@ setuptools.setup(
     'Development Status :: 5 - Production/Stable',
 
     'Intended Audience :: Developers',
-    'Topic :: Software Development :: Configuration',
+    'Topic :: Software Development',
 
     'License :: OSI Approved :: MIT License',
 
