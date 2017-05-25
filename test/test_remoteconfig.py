@@ -36,8 +36,3 @@ class TestRemoteConfig(object):
     # Should update after cache duration
     config.read(config_url)
     assert updated_config_content == str(config)
-
-  def test_bad_url(self):
-    with pytest.raises(requests.ConnectionError):
-      config.read('http://bad-url-that-do-not-exist.bad/config.cfg')
-      config.might_get_here_or_not
