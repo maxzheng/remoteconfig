@@ -7,7 +7,7 @@ remote_requirements = '\n'.join(str(r.req) for r in parse_requirements("requirem
 
 setuptools.setup(
   name='remoteconfig',
-  version='0.2.4',
+  version='1.0.0',
 
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',

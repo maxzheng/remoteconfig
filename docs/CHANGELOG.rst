@@ -1,3 +1,12 @@
+Version 1.0.0
+================================================================================
+
+* Reindent to 4 spaces
+* Upgrade to Python 3
+* Add long description / url
+* Update tox.ini
+* Update tox.ini
+
 Version 0.2.4
 ================================================================================
 
