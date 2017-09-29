@@ -1,5 +1,4 @@
 from localconfig.manager import LocalConfig
-import requests
 
 from remoteconfig.utils import url_content
 

@@ -1,8 +1,6 @@
 import time
 
 import httpretty
-import pytest
-import requests
 
 from remoteconfig import config, RemoteConfig
 
