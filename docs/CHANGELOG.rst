@@ -1,5 +1,13 @@
-Version 1.0.0
+Version 1.0.1
 ================================================================================
+
+* Remove pip.req as it is not needed
+* Move envdir to .virtualenvs
+* Ignore .eggs for style check
+* Fix styles
+
+Version 1.0.0
+--------------------------------------------------------------------------------
 
 * Reindent to 4 spaces
 * Upgrade to Python 3
