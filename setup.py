@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
   name='remoteconfig',
-  version='1.0.1',
+  version='1.0.3',
 
   author='Max Zheng',
   author_email='maxzheng.os @t gmail.com',

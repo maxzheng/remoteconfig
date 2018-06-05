@@ -1,5 +1,10 @@
-Version 1.0.1
+Version 1.0.2
 ================================================================================
+
+* Switch to serial test run
+
+Version 1.0.1
+--------------------------------------------------------------------------------
 
 * Remove pip.req as it is not needed
 * Move envdir to .virtualenvs
