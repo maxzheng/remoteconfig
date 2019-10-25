@@ -6,7 +6,7 @@ import time
 
 
 def _url_content_cache_file(url):
-    return os.path.join(tempfile.gettempdir(), 'url-content-cache-%s' % re.sub('[^\w\.:\-=?+]', '_', url[-200:]))
+    return os.path.join(tempfile.gettempdir(), 'url-content-cache-%s' % re.sub(r'[^\w\.:\-=?+]', '_', url[-200:]))
 
 
 def url_content(url, cache_duration=None, from_cache_on_error=False):
